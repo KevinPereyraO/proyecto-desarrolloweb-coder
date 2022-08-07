@@ -1,0 +1,331 @@
+/*-------HEADER--------*/
+header {}
+
+
+
+
+
+
+/*-------MAIN--------*/
+
+.hero {
+  width: 100%;
+  height: 10vw;
+  background: rgb(142, 13, 13);
+  background: linear-gradient(0deg, rgba(142, 13, 13, 1) 50%, rgba(0, 0, 0, 1) 90%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+
+}
+
+.hero1 {
+  width: 100%;
+  height: 50vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.26)), url(image/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero1 h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 250;
+  font-size: 40px;
+  border: 2px solid whitesmoke;
+}
+
+.hero1 p {
+  margin: 20px;
+}
+
+.hero1 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 70;
+  font-size: 12px;
+  background-color: black;
+  padding: 8px;
+
+}
+
+.hero h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 250;
+  font-size: 40px;
+  border: 2px solid whitesmoke;
+  animation-name: fade-in;
+  animation-duration: 1s;
+
+}
+/*-------animacion h2 del hero--------*/
+@keyframes fade-in{
+  0%{
+    transform:translateX(-300px)
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+.hero p {
+  margin: 20px;
+}
+
+.hero a {
+  text-decoration: none;
+  color: white;
+  font-weight: 70;
+  font-size: 12px;
+  background-color: black;
+  padding: 8px;
+  transition-duration: .3s;
+  transition-delay: .2s;
+
+  
+  }
+  .hero a:hover{
+    color: #611212;
+    background-color: #ffffff;
+    transform: rotate(360deg);
+        
+  }
+
+.productos {}
+
+.productos h2 {
+  background-color: rgb(34, 34, 34);
+  color: rgb(175, 101, 101);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.productos div div img {
+  width: 200px;
+  height: 150px;
+
+}
+
+.productos div div {
+  border: 1px solid gray;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  margin-top: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.productos div div h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.productos div div a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-weight: 800;
+  padding: 5px;
+
+}
+
+.cajas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
+}
+
+.galeria {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+
+
+}
+
+.galeria h2 {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+}
+
+.galeria div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-galeria {}
+
+.hero-galeria h2 {
+  background-color: rgb(34, 34, 34);
+  color: rgb(175, 101, 101);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero-contacto {}
+
+.hero-contacto h2 {
+  background-color: rgb(34, 34, 34);
+  color: rgb(175, 101, 101);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.title-products {}
+
+.title-products h2 {
+  background-color: rgb(34, 34, 34);
+  color: rgb(175, 101, 101);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.imagen-productos div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+
+}
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Image-1 Image-1 Image1"
+    "image2 . ."
+    ". . .";
+}
+
+.Image-1 {
+  grid-area: Image-1;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.container6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logoHerramix textoLogo textoLogo"
+    ". . ."
+    ". . .";
+}
+
+.logoHerramix {
+  grid-area: logoHerramix;
+}
+
+.textoLogo {
+  grid-area: textoLogo;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja-trans{
+  
+  height: 20px;
+  width: 20px;
+
+  transition-delay: .2s;
+  transition-duration: .3s;
+  transition-timing-function: ;
+
+
+}
+
+
+/*-------FOOTER--------*/
+footer {
+  text-align: right;
+  background-color: black;
+  color: red;
+  font-weight: 2500;
+}
+
+
+/*-------MEDIA QUERY--------*/
+@media screen and (max-width:944px) {
+
+
+  .hero h2 {
+    font-size: 11px;
+  }
+
+  .hero p {
+    font-size: 10px;
+  }
+
+
+
+  .hero1 h2 {
+    font-size: 12px;
+  }
+
+  .hero1 p {
+    font-size: 11px;
+  }
+
+}
+
+@media screen and (max-width:687px) {
+  .maps {
+    height: 5px;
+    width: 5px;
+  }
+}
+
+.texto-inicio {
+  background-color: #000000;
+  color: #ff0000;
+  text-align: center;
+}
